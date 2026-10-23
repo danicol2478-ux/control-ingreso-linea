@@ -1,0 +1,17 @@
+name: control_ingreso_linea
+description: Control de ingreso a eventos en línea con Google Sheets.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mobile_scanner: ^7.2.1      # cámara + lector de códigos (QR y PDF417 de la cédula)
+  http: ^1.2.2                # hablar con Google Sheets por internet
+  shared_preferences: ^2.3.2  # guardar la configuración en el celular
+
+flutter:
+  uses-material-design: true
